@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KK Brothers offers premium auto detailing and car wash services in Accra. Book now for a showroom shine at your doorstep!">
+  <meta name="keywords" content="auto detailing, car wash, KK Brothers, Accra, interior cleaning, engine wash, premium car wash">
+  <meta name="author" content="KK Brothers">
+  <!-- Open Graph Tags for Social Sharing -->
+  <meta property="og:title" content="KK Brothers - Premium Auto Detailing Services">
+  <meta property="og:description" content="Get showroom shine with KK Brothers' auto detailing and car wash services. Book now for a 15% Mother's Day discount!">
+  <meta property="og:image" content="Assets/flyer.jpg">
+  <meta property="og:url" content="https://froxxtt-dev.github.io/KK-Brothers/">
+  <meta property="og:type" content="website">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="Assets/favicon.ico">
+  <!-- Apple Touch Icon (for iOS devices) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="Assets/apple-touch-icon.png">
+  <!-- Favicon for modern browsers -->
+  <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon-16x16.png">
+  <!-- Microsoft Windows Tiles -->
+  <meta name="msapplication-TileImage" content="Assets/ms-icon.png">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Font Awesome for Hamburger Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2Lw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Animate.css for CSS animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wi4Z1eXX9UNhDwqNAH0q0u9XFQjYbLO4vKAiIXk8sKR0K1v0g9S0PJQwJuvtw0wL0J+3n5vO1jgg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Spinner -->
+  <div id="spinner" class="spinner">
+    <div class="spinner-circle"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <h1 class="animate__animated animate__fadeInDown text-center">KK Brothers</h1>
+        <p class="header-tagline text-center">Premium Auto Detailing Services</p>
+        <button class="hamburger" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav-menu">
+          <a href="#hero-section">Home</a>
+          <a href="#services-section">Services</a>
+          <a href="#before-after-section">Before & After</a>
+          <a href="#testimonial-section">Testimonials</a>
+          <a href="#contact-section">Contact</a>
+          <a href="#booking-section" class="btn nav-btn">Book Now</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Flyer Section -->
+  <section class="flyer-section text-center animate__animated animate__fadeIn">
+    <div class="container">
+      <div class="flyer-content">
+        <h2 class="flyer-title">Mother's Day Offer</h2>
+        <p class="flyer-discount">15% Discount</p>
+        <h3 class="flyer-subtitle">Auto Detailing & Car Wash Service</h3>
+        <div class="flyer-services row">
+          <div class="col">
+            <h4>Interior Cleaning</h4>
+            <p>Deep cleaning for seats, carpets, and more.</p>
+          </div>
+          <div class="col">
+            <h4>Premium Car Wash</h4>
+            <p>Top-notch wash for a sparkling finish.</p>
+          </div>
+          <div class="col">
+            <h4>Waterless Engine Wash</h4>
+            <p>Efficient and thorough engine cleaning.</p>
+          </div>
+        </div>
+        <p class="flyer-description">Get showroom shine from the comfort of your own home! Our expert technicians come to you, providing top-notch auto detailing services. Our services include: Interior cleaning, Engine wash, Dashboard polishing, Upholstery cleaning, and many more.</p>
+        <a href="#booking-section" class="btn flyer-btn">Book Now: 024-0768-005</a>
+        <p class="flyer-brand">KK Brothers</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hero Section -->
+  <section class="hero-section text-center animate__animated animate__fadeIn" id="hero-section">
+    <div class="container">
+      <h2 class="text-center">Get Showroom Shine From the Comfort of Your Home</h2>
+      <video autoplay muted loop playsinline class="hero-video" loading="lazy">
+        <source src="Assets/WhatsApp Video 2025-04-14 at 23.36.47_e5fd7d21.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <a href="#booking-section" class="btn hero-btn animate__animated animate__pulse animate__infinite">Book Now</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services-section animate__animated animate__fadeIn" id="services-section">
+    <div class="container">
+      <h2 class="text-center">Our Services</h2>
+      <div class="row">
+        <!-- Exterior Wash and Polish -->
+        <div class="col animate__animated animate__zoomIn" style="animation-delay: 0.2s;">
+          <div class="service-card">
+            <div class="service-image-wrapper">
+              <img src="Assets/download.jpg" alt="Car undergoing exterior wash and polish" loading="lazy">
+            </div>
+            <h3>Exterior Wash and Polish</h3>
+            <p>Complete cleaning and polishing for a showroom shine.</p>
+            <p class="price">Start from ₵250</p>
+          </div>
+        </div>
+        <!-- Interior Detailing -->
+        <div class="col animate__animated animate__zoomIn" style="animation-delay: 0.4s;">
+          <div class="service-card">
+            <div class="service-image-wrapper">
+              <img src="Assets/IMG-20250412-WA0006.jpg" alt="Car interior detailing" loading="lazy">
+            </div>
+            <h3>Interior Detailing</h3>
+            <p>Deep cleaning for seats, carpets, and dashboards.</p>
+            <p class="price">Start from ₵100</p>
+          </div>
+        </div>
+        <!-- Engine Wash -->
+        <div class="col animate__animated animate__zoomIn" style="animation-delay: 0.6s;">
+          <div class="service-card">
+            <div class="service-image-wrapper">
+              <img src="Assets/IMG-20250412-WA0020.jpg" alt="Car engine wash" loading="lazy">
+            </div>
+            <h3>Engine Wash</h3>
+            <p>Thorough cleaning for your vehicle's engine.</p>
+            <p class="price">Start from ₵200</p>
+          </div>
+        </div>
+        <!-- Seat Cleaning & Polishing -->
+        <div class="col animate__animated animate__zoomIn" style="animation-delay: 0.8s;">
+          <div class="service-card">
+            <div class="service-image-wrapper">
+              <img src="Assets/IMG-20250412-WA0005.jpg" alt="Car seat cleaning and polishing" loading="lazy">
+            </div>
+            <h3>Seat Cleaning & Polishing</h3>
+            <p>Deep cleaning and polishing for your seats.</p>
+            <p class="price">Start from ₵250</p>
+          </div>
+        </div>
+        <!-- Dashboard Polishing -->
+        <div class="col animate__animated animate__zoomIn" style="animation-delay: 1s;">
+          <div class="service-card">
+            <div class="service-image-wrapper">
+              <img src="Assets/What-is-the-best-thing-to-clean-car-dashboard.jpg" alt="Car dashboard polishing" loading="lazy">
+            </div>
+            <h3>Dashboard Polishing</h3>
+            <p>Polishing to restore your dashboard's shine.</p>
+            <p class="price">Start from ₵200</p>
+          </div>
+        </div>
+        <!-- Wheel Cleaning -->
+        <div class="col animate__animated animate__zoomIn" style="animation-delay: 1.2s;">
+          <div class="service-card">
+            <div class="service-image-wrapper">
+              <img src="Assets/IMG-20250412-WA0003.jpg" alt="Car wheel cleaning" loading="lazy">
+            </div>
+            <h3>Wheel Cleaning</h3>
+            <p>Scrubbing for a deep clean on your wheels.</p>
+            <p class="price">Start from ₵200</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Before and After Section -->
+  <section class="before-after-section animate__animated animate__fadeIn" id="before-after-section">
+    <div class="container">
+      <h2 class="text-center">See the Transformation: Before & After</h2>
+      <div class="row">
+        <!-- Exterior Shine -->
+        <div class="col animate__animated animate__zoomIn" style="animation-delay: 0.2s;">
+          <div class="before-after-card" tabindex="0">
+            <div class="before-after-wrapper">
+              <img src="Assets/car-wash-before.jpg" alt="Car exterior before detailing" class="before-image" loading="lazy">
+              <img src="Assets/car-wash-after.jpg" alt="Car exterior after detailing" class="after-image" loading="lazy">
+              <div class="before-after-label" data-label="Before"></div>
+            </div>
+            <h3>Exterior Shine</h3>
+            <p>From dull to dazzling: a showroom finish.</p>
+          </div>
+        </div>
+        <!-- Interior Deep Clean -->
+        <div class="col animate__animated animate__zoomIn" style="animation-delay: 0.4s;">
+          <div class="before-after-card" tabindex="0">
+            <div class="before-after-wrapper">
+              <img src="Assets/interior before.jpg" alt="Car interior before deep cleaning" class="before-image" loading="lazy">
+              <img src="Assets/interior after.jpg" alt="Car interior after deep cleaning" class="after-image" loading="lazy">
+              <div class="before-after-label" data-label="Before"></div>
+            </div>
+            <h3>Interior Deep Clean</h3>
+            <p>Revitalized seats and spotless interiors.</p>
+          </div>
+        </div>
+        <!-- Wheel Restoration -->
+        <div class="col animate__animated animate__zoomIn" style="animation-delay: 0.6s;">
+          <div class="before-after-card" tabindex="0">
+            <div class="before-after-wrapper">
+              <img src="Assets/cc9e286e7929de70059a74ccf0f7642c (1).jpg" alt="Car wheel before restoration" class="before-image" loading="lazy">
+              <img src="Assets/cc9e286e7929de70059a74ccf0f7642c.jpg" alt="Car wheel after restoration" class="after-image" loading="lazy">
+              <div class="before-after-label" data-label="Before"></div>
+            </div>
+            <h3>Wheel Restoration</h3>
+            <p>Grime-free wheels that sparkle.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section class="testimonial-section animate__animated animate__fadeIn" id="testimonial-section">
+    <div class="container">
+      <h2 class="text-center">What Our Clients Say</h2>
+      <div class="testimonial-marquee">
+        <div class="testimonial-track">
+          <div class="testimonial-item">
+            <p>"My car looks brand new! Amazing service."</p>
+            <h5>John D.</h5>
+          </div>
+          <div class="testimonial-item">
+            <p>"Best detailing in Accra. Highly recommend!"</p>
+            <h5>Sarah M.</h5>
+          </div>
+          <div class="testimonial-item">
+            <p>"Seats and wheels sparkling clean!"</p>
+            <h5>Mike R.</h5>
+          </div>
+          <!-- Duplicate items for seamless scrolling -->
+          <div class="testimonial-item">
+            <p>"My car looks brand new! Amazing service."</p>
+            <h5>John D.</h5>
+          </div>
+          <div class="testimonial-item">
+            <p>"Best detailing in Accra. Highly recommend!"</p>
+            <h5>Sarah M.</h5>
+          </div>
+          <div class="testimonial-item">
+            <p>"Seats and wheels sparkling clean!"</p>
+            <h5>Mike R.</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Signals Section -->
+  <section class="trust-section text-center animate__animated animate__fadeIn">
+    <div class="container">
+      <h2 class="text-center">Why Choose Us?</h2>
+      <div class="row">
+        <div class="col">
+          <div class="trust-badge">Certified Detailers</div>
+        </div>
+        <div class="col">
+          <div class="trust-badge">5-Star Rated</div>
+        </div>
+        <div class="col">
+          <div class="trust-badge">Eco-Friendly Products</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats-section text-center animate__animated animate__fadeIn">
+    <div class="container">
+      <h2 class="text-center">Our Achievements</h2>
+      <div class="row">
+        <div class="col animate__animated animate__bounceIn" style="animation-delay: 0.2s;">
+          <div class="stat-icon">🚗</div>
+          <h3 class="counter" data-target="500">0</h3>
+          <p>Cars Detailed</p>
+        </div>
+        <div class="col animate__animated animate__bounceIn" style="animation-delay: 0.4s;">
+          <div class="stat-icon">🔧</div>
+          <h3 class="counter" data-target="1000">0</h3>
+          <p>Services Performed</p>
+        </div>
+        <div class="col animate__animated animate__bounceIn" style="animation-delay: 0.6s;">
+          <div class="stat-icon">😊</div>
+          <h3 class="counter" data-target="1000">0</h3>
+          <p>Happy Clients</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section class="booking-section text-center animate__animated animate__fadeIn" id="booking-section">
+    <div class="container">
+      <h2 class="text-center">Book Your Detailing Now</h2>
+      <form id="booking-form" class="booking-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        </div>
+        <div class="form-group">
+          <label for="service">Select Service</label>
+          <select id="service" name="service" required>
+            <option value="" disabled selected>Select a service</option>
+            <option value="Exterior Wash and Polish (₵250)">Exterior Wash and Polish (₵250)</option>
+            <option value="Interior Detailing (₵400)">Interior Detailing (₵400)</option>
+            <option value="Engine Wash (₵200)">Engine Wash (₵200)</option>
+            <option value="Seat Cleaning & Polishing (₵250)">Seat Cleaning & Polishing (₵250)</option>
+            <option value="Dashboard Polishing (₵200)">Dashboard Polishing (₵200)</option>
+            <option value="Wheel Cleaning (₵200)">Wheel Cleaning (₵200)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="date">Preferred Date</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Additional Notes</label>
+          <textarea id="message" name="message" placeholder="Any special requests?" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn animate__animated animate__pulse animate__infinite">Submit Booking</button>
+      </form>
+      <div id="form-message" class="form-message"></div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section text-center animate__animated animate__fadeIn" id="contact-section">
+    <div class="container">
+      <h2 class="text-center">Contact Us</h2>
+      <div class="contact-info">
+        <p>Email: <a href="mailto:info@kkbrothers.com">info@kkbrothers.com</a></p>
+        <p>Phone: <a href="tel:+233240768005">+233 240 768 005</a></p>
+        <p>WhatsApp: <a href="https://wa.me/233240768005" target="_blank">Chat with us</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="animate__animated animate__fadeIn">
+    <div class="container text-center">
+      <h3>Stay Updated</h3>
+      <form id="newsletter-form" class="newsletter-form">
+        <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+        <button type="submit" class="btn">Subscribe</button>
+      </form>
+      <div id="newsletter-message" class="form-message"></div>
+      <p>© 2025 KK Brothers. All Rights Reserved.</p>
+      <p>WhatsApp or Call us on: <a href="tel:+233240768005">+233 240 768 005</a></p>
+    </div>
+  </footer>
+
+  <!-- Floating Discount Banner -->
+  <div class="discount-banner">
+    <p>🎉 Mother's Day Offer: Get 15% Off! <a href="#booking-section">Book Now</a></p>
+  </div>
+
+  <!-- Back to Top -->
+  <a href="#" class="back-to-top" id="back-to-top">↑</a>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93023f0bab7a7b95',t:'MTc0NDYyMzY3NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93050f708a984c02',t:'MTc0NDY1MzE4MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
+</html>
