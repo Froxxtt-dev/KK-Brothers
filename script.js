@@ -53,12 +53,32 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// Prevent default form submission (for demo purposes)
+// Booking Form Submission with WhatsApp Redirect
 document.getElementById('booking-form').addEventListener('submit', (e) => {
   e.preventDefault();
+
+  // Capture form data
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const phone = document.getElementById('phone').value;
+  const service = document.getElementById('service').value;
+  const date = document.getElementById('date').value;
+  const message = document.getElementById('message').value;
+
+  // Format the message for WhatsApp
+  const whatsappMessage = `New Booking Details:%0AName: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AService: ${service}%0APreferred Date: ${date}%0AAdditional Notes: ${message || 'None'}`;
+
+  // WhatsApp number and redirect URL
+  const whatsappNumber = '233240768005';
+  const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+  // Redirect to WhatsApp
+  window.open(whatsappURL, '_blank');
+
+  // Display success message
   const formMessage = document.getElementById('form-message');
   formMessage.classList.add('success');
-  formMessage.innerText = 'Booking submitted successfully!';
+  formMessage.innerText = 'Booking submitted! Redirecting to WhatsApp...';
   setTimeout(() => {
     formMessage.innerText = '';
   }, 3000);
