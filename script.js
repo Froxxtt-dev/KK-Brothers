@@ -1,4 +1,3 @@
-// Spinner
 window.addEventListener('load', () => {
   const spinner = document.getElementById('spinner');
   spinner.style.opacity = '0';
@@ -65,12 +64,15 @@ document.getElementById('booking-form').addEventListener('submit', (e) => {
   const date = document.getElementById('date').value;
   const message = document.getElementById('message').value;
 
-  // Format the message for WhatsApp
-  const whatsappMessage = `New Booking Details:%0AName: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AService: ${service}%0APreferred Date: ${date}%0AAdditional Notes: ${message || 'None'}`;
+  // Format the message for WhatsApp with proper line breaks
+  const whatsappMessage = `New Booking Details:\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nService: ${service}\nPreferred Date: ${date}\nAdditional Notes: ${message || 'None'}`;
+
+  // Encode the message for the URL
+  const encodedMessage = encodeURIComponent(whatsappMessage);
 
   // WhatsApp number and redirect URL
   const whatsappNumber = '233240768005';
-  const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+  const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
 
   // Redirect to WhatsApp
   window.open(whatsappURL, '_blank');
