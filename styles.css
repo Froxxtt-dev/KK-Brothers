@@ -954,6 +954,17 @@ footer a:hover {
   color: #cc0000;
 }
 
+.feedback-button-wrapper {
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Feedback Placeholder */
+.feedback-button-wrapper .btn {
+  display: inline-block;
+  margin: 0 auto;
+}
+
 /* Back to Top */
 .back-to-top {
   position: fixed;
